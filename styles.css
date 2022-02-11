@@ -1,0 +1,160 @@
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  background-color: white;
+}
+.container,
+.leftBar,
+.rightBar,
+.logoBG,
+.formContainer {
+  display: flex;
+}
+.container {
+  background-color: white;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+}
+.formContainer {
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 2px 4px 12px -1px rgba(0, 0, 0, 0.33);
+  height: 33vh;
+  align-items: center;
+}
+
+.leftBar {
+  flex: 1;
+  background-image: url("media/images/fancy-pants.jpg");
+  justify-content: center;
+}
+
+.rightBar {
+  flex: 1.9;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info,
+form,
+.action {
+  flex: 1;
+}
+
+.info {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(145, 145, 145, 0),
+    rgba(145, 145, 145, 0.1)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.infoText {
+  width: 65%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logoBG {
+  justify-content: center;
+  width: 100%;
+  height: 20vh;
+  margin-top: 25vh;
+  background-color: rgba(90, 90, 90, 0.8);
+  align-items: center;
+}
+
+.logoAlt {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: white;
+}
+
+img {
+  max-width: 230px;
+  max-height: 230px;
+  width: auto;
+  height: auto;
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60vh;
+  gap: 4px;
+  margin-left: 10px;
+}
+
+input {
+  height: 1.5rem;
+  min-width: 28vh;
+  padding: 0px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border-color: rgb(216, 216, 216);
+}
+
+.formTitle {
+  flex: 1;
+  margin-left: 10px;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  min-width: 28vh;
+  font-size: 0.75rem;
+  max-width: 28vh;
+}
+
+.action {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.createAccount {
+  align-self: flex-start;
+}
+
+button {
+  background-color: rgb(54, 117, 253);
+  color: white;
+  margin-bottom: 10px;
+  border: solid;
+  border-color: rgb(54, 117, 253);
+  border-width: 1px;
+  border-radius: 5px;
+  height: 2rem;
+}
+input:focus {
+  background-color: lightblue;
+  border-color: black;
+  border-width: 1px;
+  outline: none;
+}
+
+input:invalid:required {
+  background-color: rgb(255, 181, 181);
+}
+
+input:valid:required {
+    background-color: rgb(181, 255, 197);
